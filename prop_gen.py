@@ -85,5 +85,5 @@ class PropGen():
         convert_directory(self.input_directory, self.preprocessed_directory)
         pages = preprocess_pdf_documents_in_directory(self.preprocessed_directory)
         print(f"Updating index: {self.index_name}")
-        insert_pdf_pages(self, self.index_name, pages)
+        self.indexer.insert_pdf_pages(self.index_name, pages)
 

@@ -53,7 +53,7 @@ class VectorIndexer():
     def insert_text(self, index_name, text):
         self.create_index(index_name)
         print(f"Inserting text to index: {index_name}")
-        return Pinecone.from_texts(text, self.embeddings, index_name=self.index_name)
+        return Pinecone.from_texts(text, self.embeddings, index_name=index_name)
     
     def insert_pdf_pages(self, index_name, pages):
         print(f"Inserting PDF docs to index: {index_name}")
