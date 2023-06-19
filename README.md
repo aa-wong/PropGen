@@ -11,11 +11,15 @@ Supercharge proposals and customer questionaires with PropGen! Leveraging genera
 
 # requirements
 - Anaconda
+- Pinecone
 
 ### 1. Clone and navigate to Library Package
 
 - Clone the repo `git clone https://github.com/aa-wong/PropGen.git`
 - Git clone this repo and `cd PropGen`
+
+### 1. Update env file
+- added values to `.env.example` and rename to `.env`
 
 ### 2. Install dependencies
 
